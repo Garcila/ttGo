@@ -8,5 +8,5 @@ app.use(bodyParser.urlencoded({ extended: true }));
 
 routes(app);
 
-let server = app.listen(8000, () => console.log(`TTGO app running on port ${server.address().port}`)
+let server = app.listen(process.env.PORT || 8000, () => console.log(`TTGO app running on port ${server.address().port}`)
 );
